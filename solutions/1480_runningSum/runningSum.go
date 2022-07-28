@@ -1,10 +1,4 @@
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Println(runningSum([]int{1, 2, 3, 4}))
-}
+package runningsum
 
 func runningSum(nums []int) []int {
 	result := make([]int, 0)

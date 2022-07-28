@@ -1,15 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	fmt.Println(romanToInt("DCXXI"))
-	fmt.Println(romanToInt("MCMXCIV"))
-	fmt.Println(romanToInt("LVIII"))
-	fmt.Println(romanToInt("III"))
-}
+package romantoint
 
 var romanMap map[string]int = map[string]int{
 	"M":   1000,

@@ -1,12 +1,6 @@
-package main
+package nummatchingsubseq
 
 import "strings"
-
-func main() {
-	s := "abcde"
-	words := []string{"a", "bb", "acd", "ace"}
-	println(numMatchingSubseq(s, words))
-}
 
 func numMatchingSubseq(s string, words []string) int {
 	num := 0
