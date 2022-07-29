@@ -10,6 +10,7 @@ func Test_isSubsequence(t *testing.T) {
 	assert.Equal(t, false, isSubsequence("aaaaaa", "bbaaaa"))
 	assert.Equal(t, true, isSubsequence("abc", "ahbgdc"))
 	assert.Equal(t, false, isSubsequence("axc", "ahbgdc"))
+	assert.Equal(t, false, isSubsequence("abcdefgh", "abc"))
 }
 
 func Benchmark_isSubsequence(b *testing.B) {
