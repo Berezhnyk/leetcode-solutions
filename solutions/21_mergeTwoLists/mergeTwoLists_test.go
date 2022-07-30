@@ -77,3 +77,20 @@ func Test_mergeTwoLists3(t *testing.T) {
 		l3 = l3.Next
 	}
 }
+func Test_mergeTwoLists4(t *testing.T) {
+	l1 := &ListNode{
+		Val: 0,
+	}
+	var l2 *ListNode = nil
+
+	l3 := &ListNode{
+		Val: 0,
+	}
+
+	r := mergeTwoLists(l1, l2)
+	for l3.Next != nil {
+		assert.Equal(t, r.Val, l3.Val)
+		r = r.Next
+		l3 = l3.Next
+	}
+}
