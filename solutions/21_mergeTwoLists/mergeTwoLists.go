@@ -29,10 +29,6 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 
 	current := head
 	for {
-		if list2 == nil && list1 == nil {
-			return head
-		}
-
 		if list1 == nil {
 			(*current).Next = list2
 			return head

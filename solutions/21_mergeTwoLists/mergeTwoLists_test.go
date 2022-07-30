@@ -164,6 +164,28 @@ func Test_mergeTwoLists6(t *testing.T) {
 	}
 }
 
+func Test_mergeTwoLists7(t *testing.T) {
+	l1 := &ListNode{
+		Val: 2,
+	}
+	l2 := &ListNode{
+		Val: 1,
+	}
+	l3 := &ListNode{
+		Val: 1,
+		Next: &ListNode{
+			Val: 2,
+		},
+	}
+
+	r := mergeTwoLists(l1, l2)
+	for l3.Next != nil {
+		assert.Equal(t, r.Val, l3.Val)
+		r = r.Next
+		l3 = l3.Next
+	}
+}
+
 func Benchmark_mergeTwoLists(b *testing.B) {
 	b.StopTimer()
 	b.ReportAllocs()
