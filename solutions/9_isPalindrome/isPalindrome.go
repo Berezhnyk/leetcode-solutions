@@ -1,10 +1,4 @@
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Println(isPalindrome(34543))
-}
+package ispalindrome
 
 func isPalindrome(x int) bool {
 	return reverse(x) == x
