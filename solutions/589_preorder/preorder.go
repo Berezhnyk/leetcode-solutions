@@ -6,5 +6,5 @@ type Node struct {
 }
 
 func preorder(root *Node) []int {
-
+	return nil
 }
