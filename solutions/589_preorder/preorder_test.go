@@ -7,7 +7,6 @@ import (
 )
 
 func Test_preorder1(t *testing.T) {
-	t.Skip("The method not implemented yet")
 	assert.EqualValues(t, []int{1, 3, 5, 6, 2, 4}, preorder(&Node{
 		Val: 1,
 		Children: []*Node{
@@ -33,7 +32,6 @@ func Test_preorder1(t *testing.T) {
 }
 
 func Test_preorder2(t *testing.T) {
-	t.Skip("The method not implemented yet")
 	assert.EqualValues(t, []int{1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10}, preorder(&Node{
 		Val: 1,
 		Children: []*Node{
@@ -95,7 +93,6 @@ func Test_preorder2(t *testing.T) {
 }
 
 func Benchmark_preorder(b *testing.B) {
-	b.Skip("The method not implemented yet")
 	b.StopTimer()
 	b.ReportAllocs()
 	b.StartTimer()
