@@ -167,7 +167,7 @@ func Test_isValidBST10(t *testing.T) {
 	}))
 }
 
-func Benchmark_levelOrder(b *testing.B) {
+func Benchmark_isValidBST(b *testing.B) {
 	b.StopTimer()
 	b.ReportAllocs()
 	b.StartTimer()

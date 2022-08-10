@@ -30,7 +30,7 @@ func Test_firstBadVersion3(t *testing.T) {
 	assert.Equal(t, 1, firstBadVersion(1))
 }
 
-func Benchmark_isSubsequence(b *testing.B) {
+func Benchmark_firstBadVersion(b *testing.B) {
 	b.StopTimer()
 	b.ReportAllocs()
 	b.StartTimer()
